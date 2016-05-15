@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Guitar Tuner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='shortcut icon' href='GTfav.png' type='image/x-icon'/ >
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet prefetch' href='http://csshake.surge.sh/csshake.min.css'>
+    <link rel="apple-touch-icon" href="GTfav.png"/>
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <body>
+  <div class="wrapper">
+    <div class="title">
+      Guitar tuner
+    </div>
+    <div id="instructions">
+      click on each string or name to hear the note. then, tune your guitar string until it matches the note.
+    </div>
+    <div class="string">
+      <table>
+        <tr>
+          <td class="whichstring shake-horizontal" onmouseover="document.getElementById('E6').play()"></td>
+          <td class="whichstring shake-horizontal" onmouseover="document.getElementById('A').play()"></td>
+          <td class="whichstring shake-horizontal" onmouseover="document.getElementById('D').play()"></td>
+          <td class="whichstring shake-horizontal" onmouseover="document.getElementById('G').play()"></td>
+          <td class="whichstring shake-horizontal" onmouseover="document.getElementById('B').play()"></td>
+          <td class="whichstring shake-horizontal" onmouseover="document.getElementById('e').play()"></td>
+        </tr>
+      </table>
+    </div>
+    <div id="note">
+      <table>
+        <tr>
+          <td class="whichnote">
+            <button onclick="document.getElementById('E6').play()">
+                6/E
+            </button>
+          </td>
+          <td class="whichnote">
+            <button onclick="document.getElementById('A').play()">
+              5/A
+            </button>
+          </td>
+          <td class="whichnote">
+            <button onclick="document.getElementById('D').play()">
+              4/D
+            </button>
+          </td>
+          <td class="whichnote">
+            <button onclick="document.getElementById('G').play()">
+              3/G
+            </button>
+          </td>
+          <td class="whichnote">
+            <button onclick="document.getElementById('B').play()">
+              2/B
+            </button>
+          </td>
+          <td class="whichnote"><button onclick="document.getElementById('e').play()">
+            1/e
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!--  Audio Files  -->
+
+  <audio id="E6">
+    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/543429/E6.mp3">
+  </audio>
+  <audio id="A">
+    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/543429/A.mp3">
+  </audio>
+  <audio id="D">
+    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/543429/D.mp3">
+  </audio>
+  <audio id="G">
+    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/543429/G.mp3">
+  </audio>
+  <audio id="B">
+    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/543429/B.mp3">
+  </audio>
+  <audio id="e">
+    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/543429/e.mp3">
+  </audio>
+</body>
+    
+    
+    
+    
+    
+  </body>
+</html>
